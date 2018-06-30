@@ -85,6 +85,6 @@ while True:
     print_text(font1,500,0,"SCORE: " + str(score))
 
     pygame.display.update()
-#test
+#test 2
 
 
