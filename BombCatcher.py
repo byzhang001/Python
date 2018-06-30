@@ -52,3 +52,9 @@ while True:
         #has the player missed teh bomb?
         if bomb_y>500:
             bomb_x=random.randint(0,500)
+            bomb_y =-50
+            lives-=1
+            if lives==0:
+                game_over=True
+        #see if player has caught the bomb
+
