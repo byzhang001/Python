@@ -57,4 +57,16 @@ while True:
             if lives==0:
                 game_over=True
         #see if player has caught the bomb
+        elif bomb_y > pos_y:
+            if bomb_x>pos_x and bomb_x<pos_x +120:
+                score+=10
+                bomb_x=random.randint(0,500)
+                bomb_y=-50
+
+        #draw the bomb
+        pygame.draw.circle(screen,black,(bomb_x-4,int(bomb_y)-4),30,0)
+        pygame.draw.circle(screen,yellow,(bomb_x,int(bomb_y)),30,0)
+
+        #set basket position
+
 
