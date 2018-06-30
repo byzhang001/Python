@@ -84,6 +84,9 @@ while True:
     #print score
     print_text(font1,500,0,"SCORE: " + str(score))
 
+    pygame.draw.circle(screen,white,(pos_x,pos_y),200,6)
+
+
     pygame.display.update()
 #test 2
 
