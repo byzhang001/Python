@@ -68,5 +68,23 @@ while True:
         pygame.draw.circle(screen,yellow,(bomb_x,int(bomb_y)),30,0)
 
         #set basket position
+        pos_x=mouse_x
+        if pos_x<0:
+            pos_x=0
+        elif pos_x>500:
+            pos_x=500
+
+        #draw basket
+        pygame.draw.rect(screen,black,(pos_x-4,pos_y-4,120,40),0)
+        pygame.draw.rect(screen,red,(pos_x,pos_y,120,40),0)
+
+    #print # of lives
+    print_text(font1,0,0,"LIVES: " +str(lives))
+
+    #print score
+    print_text(font1,500,0,"SCORE: " + str(score))
+
+    pygame.display.update()
+
 
 
