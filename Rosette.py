@@ -1,11 +1,9 @@
 import turtle
 
 t=turtle.Pen()
-t.circle(100)
-t.left(90)
-t.circle(100)
-t.left(90)
-t.circle(100)
-t.left(90)
-t.circle(100)
-t.left(90)
+
+number=eval(input("in"))
+for x in range(number):
+   t.circle (100)
+   t. left  (360/number)
+
